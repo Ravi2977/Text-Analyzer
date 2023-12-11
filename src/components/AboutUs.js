@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 export default function AboutUs(props) {
     return (
         <>
-        <div className='container'style={{color: props.mode ==='dark'?'white':'rgb(39, 41, 40)'}} >
+        <div className='container mt-5 p-3'style={{color: props.mode ==='dark'?'white':'rgb(39, 41, 40)'}} >
             <h1>About Us</h1>
             <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
