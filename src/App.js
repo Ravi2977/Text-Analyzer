@@ -4,7 +4,7 @@ import './App.css';
 import AboutUs from './components/AboutUs';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
-import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const [alert, setAlert] = useState(null);

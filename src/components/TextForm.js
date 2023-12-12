@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-
-
-
 export default function TextForm(props) {
     const [text, setText] = useState('');
     const handleUpClick = () => {
@@ -73,6 +70,7 @@ export default function TextForm(props) {
         text.select();
         navigator.clipboard.writeText(text.value);
         props.showAlert("copied to clipboard ", 'success')
+        document.getSelection().removeAllRanges()
     }
     return (
         <div className=''>
@@ -81,20 +79,20 @@ export default function TextForm(props) {
                 <div className="my-3">
                     <textarea className="form-control" style={{ backgroundColor: props.mode === 'dark' ? 'rgb(39, 41, 40)' : 'white', color: props.mode === 'dark' ? 'white' : 'rgb(39, 41, 40)' }} value={text} onChange={handleOnChange} rows="8" id="myBox"></textarea>
                 </div>
-                <button className="btn btn-primary mx-2 my-2" onClick={handleUpClick}>Convert To UpperCase</button>
-                <button className="btn btn-primary mx-2 my-2" onClick={handleLowerClick}>Convert To LowerCase</button>
-                <button className="btn btn-primary mx-2 my-2" onClick={handleRemoveExtraSpaces}>Reamove Extra Spaces</button>
-                <button className="btn btn-primary mx-2 my-2" onClick={handleCapitalise}>Capitalise the Text</button>
-                <button className="btn btn-primary mx-2 my-2" onClick={handleSentenceStyle}>Sentence Format</button>
-                <button className="btn btn-primary mx-2 my-2" onClick={handleCopy}>Copy Text</button>
-                <button className="btn btn-primary mx-2 my-2" onClick={handleClearText}>Clear Text</button>
+                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>UpperCase</button>
+                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleLowerClick}>LowerCase</button>
+                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleCapitalise}>Capitalise</button>
+                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleSentenceStyle}>Sentence Case</button>
+                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleRemoveExtraSpaces}>Reamove Extra Spaces</button>
+                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleCopy}>Copy Text</button>
+                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleClearText}>Clear Text</button>
             </div>
             <div className="container my-3" style={{ color: props.mode === 'dark' ? 'white' : 'rgb(39, 41, 40)' }}>
                 <h2 >Your Text Summery</h2>
-                <p>{text.split(" ").length - 1} words and {text.length} charecters</p>
-                <p>{(0.008 * text.split(" ").length) - 0.008} minutes to read </p>
+                <p>{text.split(" ").filter((element) => { return element.length !== 0 }).length} words and {text.length} charecters</p>
+                <p>{0.008 * text.split(" ").filter((element) => { return element.length !== 0 }).length} minutes to read </p>
                 <h2>Privew</h2>
-                <p>{text}</p>
+                <p>{text.length>0?text:"Nothing to preview"}</p>
             </div>
         </div>
     )
