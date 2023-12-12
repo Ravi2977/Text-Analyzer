@@ -36,7 +36,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar title="Text-Changer" about="About Text-Changer" mode={mode} toggleMode={toggleMode} />
+        <Navbar title="Text-Analyzer" about="About Text-Changer" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container">
           <Routes>
