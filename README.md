@@ -90,6 +90,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+Your Name - [@your_twitter](https://x.com/Ravimau28206142?t=lg7KWXjE1lFkSGMG9g6Cog&s=09) - email@example.com
 
 Project Link: [https://github.com/yourusername/your-repo](https://github.com/yourusername/your-repo)
