@@ -90,6 +90,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@twitter](https://x.com/Ravimau28206142?t=lg7KWXjE1lFkSGMG9g6Cog&s=09) 
+Ravi Maurya  - [@twitter](https://x.com/Ravimau28206142?t=lg7KWXjE1lFkSGMG9g6Cog&s=09) 
+             - [@Instgram](https://www.instagram.com/iam__bad___boy/) 
+             - [@LinkedIn](https://www.linkedin.com/in/ravi-maurya-1a37331b6/) 
+
 
 Project Link: [@Text-Analyzer](https://github.com/Ravi2977/Text-Analyzer.git)
