@@ -92,4 +92,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@twitter](https://x.com/Ravimau28206142?t=lg7KWXjE1lFkSGMG9g6Cog&s=09) 
 
-Project Link: [](https://github.com/Ravi2977/Text-Analyzer.git)
+Project Link: [@Text-Analyzer](https://github.com/Ravi2977/Text-Analyzer.git)
